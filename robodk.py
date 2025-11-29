@@ -15,7 +15,7 @@ xyzrpy = [600, 150, 300, 100, 2, 150]
 destino_pose = robomath.xyzrpw_2_pose(xyzrpy)
 
 # Velocidad
-robot.setSpeed(75)
+robot.setSpeed(200, 20) 
 
 print(f"Moviendo a destino: {xyzrpy} ...")
 robot.MoveJ(destino_pose)   # Movimiento articulado seguro
